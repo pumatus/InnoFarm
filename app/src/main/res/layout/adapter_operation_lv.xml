@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_white">
+
+
+        <ImageView
+            android:id="@+id/operation_lv_item_iv"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:id="@+id/operation_lv_item_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/operation_lv_item_iv"
+            android:text="发情时间" />
+
+        <TextView
+            android:id="@+id/operation_lv_item_tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/operation_lv_item_tv"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/operation_lv_item_imb"
+            android:layout_toRightOf="@id/operation_lv_item_iv"
+            android:singleLine="true"
+            android:text="无"
+            android:visibility="gone"
+
+            />
+
+
+        <ImageButton
+            android:id="@+id/operation_lv_item_imb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rightbtn" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

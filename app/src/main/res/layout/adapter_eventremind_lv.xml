@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/adapter_evenremind_rl_1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        >
+        <ImageView
+            android:id="@+id/iv_eventremind"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+             />
+        <TextView
+            android:id="@+id/tv_eventremind_name"
+            style="@style/taskremind_event_tv"
+            android:text="个人提醒"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/iv_eventremind"
+            android:layout_toEndOf="@+id/iv_eventremind" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/tv_eventremind_num"
+            style="@style/taskremind_eventnum_tv"
+            android:text="所有82项" />
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/darkgray"
+            />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

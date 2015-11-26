@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/topview" />
+
+    <RelativeLayout
+        android:id="@+id/rl_update_password"
+        android:layout_width="match_parent"
+
+        style="@style/taskremind_layout">
+
+        <TextView
+            style="@style/taskremind_event_tv"
+            android:text="密码修改" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_data_manager"
+        android:layout_width="match_parent"
+
+        style="@style/taskremind_layout">
+
+        <TextView
+            style="@style/taskremind_event_tv"
+            android:text="数据存储管理" />
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_parms_setting"
+        android:layout_width="match_parent"
+
+        style="@style/taskremind_layout">
+
+        <TextView
+            style="@style/taskremind_event_tv"
+            android:text="参数设置" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_about_setting"
+        android:layout_width="match_parent"
+        style="@style/taskremind_layout">
+
+        <TextView
+            style="@style/taskremind_event_tv"
+            android:text="关于我们" />
+
+        <TextView
+            style="@style/taskremind_eventnum_tv"
+            android:text="所有82项"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray" />
+
+
+
+
+</LinearLayout>

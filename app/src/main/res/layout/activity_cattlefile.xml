@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/topview" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="牛号"
+            android:layout_marginLeft="55px"
+            android:textColor="#0194dd"
+            android:layout_gravity="center_vertical"
+            android:textSize="48px"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_cattlefile_cattleNo"
+            android:layout_width="wrap_content"
+            android:text="08113"
+            android:layout_marginLeft="100dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#333333"
+            android:textSize="72px"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#3c3c3c"></View>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55px"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_cattlefile_cattleSex"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="性别：母"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_cattlefile_cattleBir"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="出生日期：2011/11/11"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55px"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_cattlefile_cattleSource"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="来源：外购"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_cattlefile_cattleBreed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="品种：荷兰奶牛"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55px"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_cattlefile_cattleFa"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="父系：CX001"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+        <TextView
+            android:id="@+id/tv_cattlefile_cattleMa"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="母系：325"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:text="状态"
+        android:layout_marginTop="72px"
+        android:layout_marginLeft="55px"
+        android:textColor="#0194dd"
+        android:layout_gravity="center_vertical"
+        android:textSize="48px"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="55px"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_cattlefile_MonthofAge"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="月龄：84"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_cattlefile_birthOrder"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="胎次：04"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55px"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_cattlefile_fanyuzhuangtai"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="繁育状态：怀孕"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_cattlefile_numberOfBreed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="配次：01"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="55px"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_cattlefile_Cowshed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="牛舍：绿洲舍"
+            android:layout_height="wrap_content"
+            android:singleLine="true"/>
+    </LinearLayout>
+    <RadioGroup
+        android:id="@+id/radio_cattlefile"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="2dp">
+
+        <RadioButton
+            android:id="@+id/radio_cattlefile_event"
+            style="@style/main_tab_bottom"
+            android:textColor="#0194dd"
+            android:textSize="48px"
+            android:text="事件" />
+        <RadioButton
+            android:id="@+id/radio_cattlefile_predict"
+            android:textSize="48px"
+            style="@style/main_tab_bottom"
+            android:text="预测" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="3dp">
+        <ImageView
+            android:id="@+id/cattleinfo_img1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#0194dd"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/cattleinfo_img2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#0194dd"
+            android:visibility="invisible"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+
+    <view
+        android:id="@+id/cattlefile_pager"
+        class="com.innofarm.external.MyViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" />
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        >
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_minus"
+            android:id="@+id/iv_minus" />
+
+        <TextView
+            android:id="@+id/tv_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="0"
+            android:textSize="100sp"
+            android:textColor="@android:color/black"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:layout_margin="20dp"
+            android:id="@+id/iv_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/selector_plus"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        >
+        <Button
+            android:id="@+id/btn_selectcount_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:layout_alignParentRight="true"
+            android:text="确定"
+            android:textSize="20sp"
+
+            />
+        <Button
+            android:id="@+id/btn_selectcount_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:text="取消"
+            android:textSize="20sp"
+            android:layout_toLeftOf="@+id/btn_selectcount_sure"
+            android:layout_toStartOf="@+id/btn_selectcount_sure" />
+
+
+        </RelativeLayout>
+
+
+</LinearLayout>

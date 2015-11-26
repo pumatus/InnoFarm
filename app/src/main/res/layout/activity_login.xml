@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="55dp"
+        />
+
+
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:id="@+id/username"
+        android:background="@drawable/et"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="41dp"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="12.7dp"
+        android:textSize="@dimen/login_textsize"
+        android:singleLine="true"
+
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="44.7dp"
+        android:ems="10"
+        android:id="@+id/password"
+        android:password="true"
+        android:background="@drawable/et"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:singleLine="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="19.3dp"
+        android:paddingLeft="12.7dp"
+        android:textSize="@dimen/login_textsize" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="31.3dp">
+
+        <ImageButton
+            android:id="@+id/login_imbtn"
+            android:layout_marginRight="85dp"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="85dp"
+            android:background="@drawable/et"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登入"
+            android:id="@+id/textView3"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:text="v0.3.6"
+    android:layout_gravity="right"
+    android:gravity="bottom"
+    />
+
+
+</LinearLayout>

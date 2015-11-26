@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/topview" />
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_white">
+        <ImageView
+            android:id="@+id/operation_lv_item_iv1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+
+            />
+        <TextView
+            android:id="@+id/operation_lv_item_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/operation_lv_item_iv1"
+            android:text="日期" />
+        <TextView
+            android:id="@+id/operation_lv_item_tv_content1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/operation_lv_item_tv1"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/operation_lv_item_imb1"
+            android:layout_toRightOf="@id/operation_lv_item_iv1"
+            android:singleLine="true"
+            android:text="无"
+            android:visibility="gone"
+            />
+        <ImageButton
+            android:id="@+id/operation_lv_item_imb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rightbtn" />
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_white">
+        <ImageView
+            android:id="@+id/operation_lv_item_iv2"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/operation_lv_item_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/operation_lv_item_iv2"
+            android:text="地点" />
+        <TextView
+            android:id="@+id/operation_lv_item_tv_content2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/operation_lv_item_tv2"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/operation_lv_item_imb2"
+            android:layout_toRightOf="@id/operation_lv_item_iv2"
+            android:singleLine="true"
+            android:text="无"
+            android:visibility="gone"
+            />
+        <ImageButton
+            android:id="@+id/operation_lv_item_imb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rightbtn" />
+    </RelativeLayout>
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_white">
+        <ImageView
+            android:id="@+id/operation_lv_item_iv3"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+        <TextView
+            android:id="@+id/operation_lv_item_tv3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/operation_lv_item_iv3"
+            android:text="描述" />
+        <TextView
+            android:id="@+id/operation_lv_item_tv_content3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/operation_lv_item_tv3"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/operation_lv_item_imb3"
+            android:layout_toRightOf="@id/operation_lv_item_iv3"
+            android:singleLine="true"
+            android:text="无"
+            android:visibility="gone"
+            />
+        <ImageButton
+            android:id="@+id/operation_lv_item_imb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/rightbtn" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

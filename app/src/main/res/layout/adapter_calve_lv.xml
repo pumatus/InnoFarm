@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+   <!-- <TextView
+        android:id="@+id/tv_calve_cattlenum"
+        android:layout_width="0dip"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="17sp" />-->
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout_up"
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+
+        <RadioButton
+            android:id="@+id/rb_calve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_calve_cattlenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="17.0sp"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_calve_date"
+        android:layout_width="0dip"
+        android:layout_weight="2"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:gravity="center"
+        />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_calve_calveno"
+        android:layout_width="0dip"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:gravity="center"
+        />
+
+    <View
+        android:layout_width="0.5px"
+        android:layout_height="fill_parent"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+
+
+
+</LinearLayout>

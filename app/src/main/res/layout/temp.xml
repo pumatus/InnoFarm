@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="牛号"
+    android:layout_margin="10dp"
+    android:textSize="25sp"
+    />
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightbtn"/>
+
+        </RelativeLayout>
+
+
+
+
+    <ListView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+
+    <!--item-->
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/im"
+            android:layout_width="35dp"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@id/im"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发情时间"
+
+
+            />
+
+
+        <ImageButton
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightbtn"/>
+
+
+        </RelativeLayout>
+
+
+
+
+</LinearLayout>

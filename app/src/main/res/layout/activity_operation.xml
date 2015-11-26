@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/operation_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/topview" />
+
+
+    <RelativeLayout
+        android:id="@+id/operation_top"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="牛号"
+            android:textSize="25sp" />
+
+        <EditText
+            android:layout_toRightOf="@+id/tv_operation"
+            android:id="@+id/operation_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="80dp"
+            android:singleLine="true"
+            android:background="@null"
+            android:inputType="number"
+            />
+
+        <View
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/darkgray"
+            />
+
+        <!--<com.innofarm.external.MyEditText
+            android:id="@+id/operation_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="100dp"
+            />-->
+
+        <!--<ImageButton
+            android:id="@+id/operation_imb"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rightbtn"/>
+-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cattle_inf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/cattle_parity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="胎次： 0"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/cowshed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cattle_parity"
+            android:text="牛舍："
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/prod_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cattle_parity"
+            android:layout_marginLeft="55dp"
+            android:layout_toRightOf="@+id/cowshed"
+            android:text="产后天数："
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/operation_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp" />
+
+
+</LinearLayout>

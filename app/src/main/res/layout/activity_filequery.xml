@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/topview"/>
+
+    <!--<com.innofarm.external.MySearchView
+        android:id="@+id/main_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        >
+    </com.innofarm.external.MySearchView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/color_white">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/search"
+
+            />
+        <EditText
+            android:id="@+id/et_filequery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:hint="请输入牛号"
+            android:textSize="20sp"
+            android:layout_gravity="bottom"
+            android:singleLine="true"
+            android:background="@null"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+    <ListView
+        android:id="@+id/lv_filequery"
+        android:background="@color/color_white"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/topview" />
+
+
+    <!--<com.innofarm.external.MySearchView
+        android:id="@+id/main_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        >
+    </com.innofarm.external.MySearchView>-->
+
+    <RelativeLayout
+        android:id="@+id/rl_mianwork_event"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+
+        >
+        <TextView
+            android:id="@+id/reminder_event"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="事件提醒"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/event_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所有82项"
+            android:textColor="@color/color_blue"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray"
+        />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_reminder_personal"
+        style="@style/taskremind_layout">
+
+        <TextView
+            android:id="@+id/reminder_personal"
+            style="@style/taskremind_event_tv"
+            android:text="个人提醒"
+             />
+
+
+        <TextView
+            android:id="@+id/personal_time"
+            style="@style/taskremind_eventnum_tv"
+            android:text="所有82项"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/darkgray"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_reminder_sys"
+        style="@style/taskremind_layout">
+
+        <TextView
+            android:id="@+id/reminder_sys"
+            style="@style/taskremind_event_tv"
+            android:text="系统提醒"
+            />
+
+
+        <TextView
+            android:id="@+id/sys_time"
+            style="@style/taskremind_eventnum_tv"
+            android:text="所有82项"
+           />
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:id="@+id/rl_reminder_service"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/reminder_service"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="服务提醒"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/reminder_service"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/service_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="发情监控"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/service_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="牛只012"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/service_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:layout_marginRight="10dp"
+            android:text="6.10" />
+    </RelativeLayout>-->
+
+
+</LinearLayout>

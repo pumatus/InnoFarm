@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/Common_tv1"
+            android:layout_width="0dip"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:text="牛只号（母牛）"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/Common_tv2"
+            android:layout_width="0dip"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="日期"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/Common_tv3"
+            android:layout_width="0dip"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:text="犊牛号"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/Common_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </ListView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/topview" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_cattlesurvey"
+
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="2dp">
+
+        <RadioButton
+            android:id="@+id/rb_niuqun_gaikuang"
+            style="@style/main_tab_bottom"
+            android:text="牛群概况"
+            android:textColor="#0194dd"
+            android:textSize="48px" />
+
+        <RadioButton
+            android:id="@+id/rb_qinruniu_tongji"
+            style="@style/main_tab_bottom"
+            android:text="沁乳牛统计"
+            android:textSize="48px" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:id="@+id/iv_niuqun_gaikuang"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#0194dd" />
+
+        <ImageView
+            android:id="@+id/iv_qinruniu_tongji"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#0194dd"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+
+    <view
+        android:id="@+id/viewpager_cattlesurvey"
+        class="com.innofarm.external.MyViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0" />
+
+
+</LinearLayout>

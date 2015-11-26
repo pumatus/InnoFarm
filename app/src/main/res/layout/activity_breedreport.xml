@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/topview"/>
+    <RadioGroup
+        android:id="@+id/radio_cattlefile"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="2dp">
+
+        <RadioButton
+            android:id="@+id/radio_cattlefile_event"
+            style="@style/main_tab_bottom"
+            android:textColor="#0194dd"
+            android:textSize="48px"
+            android:text="繁育指标" />
+        <RadioButton
+            android:id="@+id/radio_cattlefile_predict"
+            android:textSize="48px"
+            style="@style/main_tab_bottom"
+            android:text="繁育统计" />
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="3dp">
+        <ImageView
+            android:id="@+id/cattleinfo_img1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#0194dd"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/cattleinfo_img2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="#0194dd"
+            android:visibility="invisible"
+            android:layout_height="fill_parent" />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+
+    <!--首页的bottomTab-->
+    <dimen name="bottom_tab_padding_drawable">2.0dip</dimen>
+    <dimen name="bottom_tab_padding_up">2.0dip</dimen>
+    <dimen name="bottom_tab_font_size">14.0sp</dimen>
+
+    <!--topView-->
+
+    <dimen name="linear_height">54dp</dimen>
+    <dimen name="title_zize">52sp</dimen>
+
+    <!--login-->
+
+    <dimen name="login_textsize">14sp</dimen>
+    <!--自定义searchView-->
+    <dimen name="btn_height">40dp</dimen>
+    <dimen name="btn_width">50dp</dimen>
+
+
+
+
+
+</resources>

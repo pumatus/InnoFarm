@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.innofarm">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name="com.innofarm.InnoFarmApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="com.innofarm.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+
+        <activity android:name=".activity.OperationActivity" />
+        <activity android:name=".activity.TransitActivity" />
+        <activity
+            android:name=".activity.RemindActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.RemindContentActivity" />
+        <activity android:name=".activity.CattleFileActivity" />
+        <activity android:name=".activity.FileQueryActivity" />
+        <activity android:name=".activity.OperationRecordsActivity" />
+        <activity android:name=".activity.BreedReportActivity" />
+        <activity android:name=".activity.VersionUpdateActivity" />
+        <activity android:name=".activity.FarmSurvey" />
+        <activity android:name=".activity.PersonalRemindContentActivity" />
+
+
+
+        <service android:name=".manager.RequestService" />
+
+
+    </application>
+
+</manifest>

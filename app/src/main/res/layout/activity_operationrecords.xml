@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/topview" />
+
+
+    <ListView
+        android:id="@+id/lv_timeselect"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:dividerHeight="0.25dp" />
+    <!--<include layout="@layout/adapter_operation_lv"
+        android:layout_height="55dp"
+        android:layout_width="match_parent"
+        />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="5dp"
+        android:background="@color/color_white"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/search"
+
+            />
+
+        <EditText
+            android:id="@+id/et_operationrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@null"
+            android:hint="请输入操作者"
+            android:singleLine="true"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_operationrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="95dp"
+            android:background="@null"
+            android:text="查询"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+
+    <!--<ListView
+        android:id="@+id/lv_operationrecods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@color/color_white" />-->
+
+    <com.innofarm.external.XListView.XListView
+        android:id="@+id/lv_operationrecods"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp"
+        android:background="@color/color_white"/>
+
+
+</LinearLayout>

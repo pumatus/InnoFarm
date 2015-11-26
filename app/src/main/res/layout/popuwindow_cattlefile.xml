@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/operaion_faqing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/darkgray"
+        android:text="添加发情操作" />
+
+    <Button
+        android:id="@+id/operaion_peizhong"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/darkgray"
+        android:text="添加配种操作" />
+    <Button
+        android:id="@+id/operaion_renjian"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/darkgray"
+        android:text="添加妊检操作" />
+
+    <Button
+        android:id="@+id/operaion_gannai"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/darkgray"
+        android:text="添加干奶操作" />
+    <Button
+        android:id="@+id/operaion_chandu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/darkgray"
+        android:text="添加产犊操作" />
+
+    <Button
+        android:id="@+id/operaion_zhuanyi"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/darkgray"
+        android:text="添加转移操作" />
+    <Button
+        android:id="@+id/operaion_taotai"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/darkgray"
+        android:text="添加淘汰操作" />
+
+
+</LinearLayout>

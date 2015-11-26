@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/topview"/>
+
+    <RadioGroup
+        android:id="@+id/calve_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="2dp">
+
+        <RadioButton
+            android:id="@+id/rb_week"
+            style="@style/main_tab_bottom"
+            android:text="一周内" />
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/rb_month"
+            style="@style/main_tab_bottom"
+            android:text="一月内" />
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <RadioButton
+            android:id="@+id/rb_all"
+            style="@style/main_tab_bottom"
+            android:text="全部" />
+
+    </RadioGroup>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/cattle_num"
+            android:layout_width="0dip"
+            android:layout_height="30dp"
+            android:layout_weight="3"
+            android:text="牛只号（母牛）"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/calve_date"
+            android:layout_width="0dip"
+            android:layout_height="30dp"
+            android:layout_weight="2"
+            android:text="日期"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+        <TextView
+            android:gravity="center"
+            android:id="@+id/calve_num"
+            android:layout_width="0dip"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:text="犊牛号"
+            android:textSize="15sp" />
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="#B8B8B8"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:background="#B8B8B8"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/lv_calve"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        </ListView>
+
+
+
+
+
+
+
+</LinearLayout>
